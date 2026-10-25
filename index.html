@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2ede1" />
+    <meta name="description" content="Compute at Sea builds offshore floating data-centre vessels: seawater-cooled, wind-powered AI compute moored where the grid can't reach. Live fleet console, berth planner, workload router and charter desk." />
+    <meta property="og:title" content="Compute at Sea — the grid is full, the ocean isn't" />
+    <meta property="og:description" content="Offshore floating data-centre vessels for AI. Seawater cooling, offshore wind, 14 months to power." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Compute at Sea</title>
+    <script>
+      try {
+        var p = localStorage.getItem('cas.palette');
+        if (!p) p = matchMedia('(prefers-color-scheme: dark)').matches ? 'dusk' : 'day';
+        document.documentElement.dataset.theme = p;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Compute at Sea needs JavaScript for its live fleet console.</noscript>
+    <script type="module" src="/src/client/main.tsx"></script>
+  </body>
+</html>

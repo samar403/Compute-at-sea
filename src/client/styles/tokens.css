@@ -1,0 +1,131 @@
+/*
+ * Three palettes borrowed from ship's bridges.
+ *   day   — the paper nautical chart: buff land, blue soundings, ink linework.
+ *   dusk  — the bridge after sunset: deep navy glass, cyan instruments, amber cautions.
+ *   night — ECDIS night mode: everything in dim red so the officer of the watch keeps night vision.
+ */
+:root,
+:root[data-theme='day'] {
+  color-scheme: light;
+  --bg: #f2ede1;
+  --bg-2: #e9e2d2;
+  --panel: #fbf8f1;
+  --panel-2: #f5f0e4;
+  --ink: #13243a;
+  --ink-2: #4a5a6e;
+  --ink-3: #7f8996;
+  --line: rgba(19, 36, 58, 0.13);
+  --line-strong: rgba(19, 36, 58, 0.34);
+  --sea-1: #dfeaee;
+  --sea-2: #cfe0e7;
+  --sea-3: #b4cfdb;
+  --land: #e8d9b5;
+  --land-line: #8f7b52;
+  --grat: rgba(19, 36, 58, 0.12);
+  --accent: #e0502a;
+  --accent-2: #f07b4f;
+  --accent-ink: #fffaf3;
+  --ok: #2e7d5b;
+  --warn: #cf3b2b;
+  --caution: #b97d0c;
+  --info: #2f6fa0;
+  --wind: #2f7fa8;
+  --battery: #6c5fc4;
+  --cable: #8a93a0;
+  --genset: #c98a12;
+  --export: #2e7d5b;
+  --shallow: #b5d2dc;
+  --abyss: #061320;
+  --abyss-ink: #e2edf2;
+  --glow: transparent;
+  --shadow: 0 1px 0 rgba(19, 36, 58, 0.06), 0 8px 24px -12px rgba(19, 36, 58, 0.25);
+  --flag-filter: none;
+  --grain-opacity: 0.35;
+}
+
+:root[data-theme='dusk'] {
+  color-scheme: dark;
+  --bg: #08131f;
+  --bg-2: #0c1a29;
+  --panel: #0f2032;
+  --panel-2: #12263b;
+  --ink: #e3eef3;
+  --ink-2: #9db3c2;
+  --ink-3: #62798b;
+  --line: rgba(160, 205, 225, 0.12);
+  --line-strong: rgba(160, 205, 225, 0.3);
+  --sea-1: #0c1c2d;
+  --sea-2: #0f2337;
+  --sea-3: #142c44;
+  --land: #17232c;
+  --land-line: #3d5464;
+  --grat: rgba(160, 205, 225, 0.08);
+  --accent: #f2a541;
+  --accent-2: #ffc36e;
+  --accent-ink: #1a1206;
+  --ok: #4fd1a1;
+  --warn: #ff6b5a;
+  --caution: #f2c14e;
+  --info: #5cc8e8;
+  --wind: #5cc8e8;
+  --battery: #a79bff;
+  --cable: #8fa3b3;
+  --genset: #f2a541;
+  --export: #4fd1a1;
+  --shallow: #0d2438;
+  --abyss: #01060b;
+  --abyss-ink: #e3eef3;
+  --glow: rgba(92, 200, 232, 0.35);
+  --shadow: 0 0 0 1px rgba(160, 205, 225, 0.05), 0 18px 40px -20px rgba(0, 0, 0, 0.8);
+  --flag-filter: saturate(0.85) brightness(0.92);
+  --grain-opacity: 0.18;
+}
+
+:root[data-theme='night'] {
+  color-scheme: dark;
+  --bg: #060101;
+  --bg-2: #0b0202;
+  --panel: #100303;
+  --panel-2: #150404;
+  --ink: #e5493a;
+  --ink-2: #a8382c;
+  --ink-3: #6c2219;
+  --line: rgba(229, 73, 58, 0.14);
+  --line-strong: rgba(229, 73, 58, 0.34);
+  --sea-1: #0c0202;
+  --sea-2: #110303;
+  --sea-3: #170404;
+  --land: #1d0605;
+  --land-line: #4e140f;
+  --grat: rgba(229, 73, 58, 0.08);
+  --accent: #ff6a4d;
+  --accent-2: #ff8b70;
+  --accent-ink: #120202;
+  --ok: #d44535;
+  --warn: #ff8a6e;
+  --caution: #f0634c;
+  --info: #b83a2d;
+  --wind: #ff6a4d;
+  --battery: #b13428;
+  --cable: #6c2219;
+  --genset: #e5493a;
+  --export: #8a2a20;
+  --shallow: #120303;
+  --abyss: #030000;
+  --abyss-ink: #e5493a;
+  --glow: rgba(255, 90, 70, 0.25);
+  --shadow: 0 0 0 1px rgba(229, 73, 58, 0.06), 0 18px 40px -20px rgba(0, 0, 0, 0.9);
+  --flag-filter: grayscale(1) sepia(1) hue-rotate(-50deg) saturate(4) brightness(0.55);
+  --grain-opacity: 0.12;
+}
+
+:root {
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-ui: 'Instrument Sans Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --radius: 4px;
+  --radius-lg: 10px;
+  --gutter: clamp(16px, 3vw, 32px);
+  --topbar-h: 60px;
+  --ease: cubic-bezier(0.22, 0.8, 0.24, 1);
+}
